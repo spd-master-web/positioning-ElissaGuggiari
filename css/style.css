@@ -11,6 +11,7 @@ article {
     min-height: 933px;
     padding: 5%;
     border: 10px solid blue;
+
 }
 
 /*-----Text-----*/
@@ -22,9 +23,10 @@ p {
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 32px;
     color: blue;
-    text-decoration: underline;
+    border-bottom: 2px solid blue;
+    position: relative;
 }
 
 p {
@@ -33,19 +35,41 @@ p {
 }
 
 /*-----Link-----*/
-span-positioned {
+.span-positioned {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    font-size: 16px;
     color: red;
-    border-radius: 5%;
+    border-radius: 50%;
     border: 2px solid red;
+    padding: 10px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-link-share {
+.link-share {
+    width: 75px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    bottom: 20px;
-    left: 20px;
+    bottom: 5%;
+    left: 5%;
 }
 
 a {
+    width: 75px;
+    height: 20px;
     font-size: 16px;
     border: 2px solid blue;
     border-radius: 10px;
@@ -56,11 +80,17 @@ a {
 a:link,
 a:visited {
     color: black;
+    font-size: 16px;
 }
 
 a:hover {
     color: blue;
+    font-size: 16px;
 }
 
 /*-----Media Breakpoint-----*/
-TODO
+@media (max-width: 1000px) {
+    article {
+        width: 100%;
+    }
+}
