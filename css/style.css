@@ -1,0 +1,96 @@
+/*-----First Rules-----*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*-----Article-----*/
+article {
+    width: 50%;
+    min-height: 933px;
+    padding: 5%;
+    border: 10px solid blue;
+
+}
+
+/*-----Text-----*/
+a,
+h1,
+p {
+    font-family: Serif;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    color: blue;
+    border-bottom: 2px solid blue;
+    position: relative;
+}
+
+p {
+    font-family: Sans-serif;
+    font-size: 20px;
+}
+
+/*-----Link-----*/
+.span-positioned {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    font-size: 16px;
+    color: red;
+    border-radius: 50%;
+    border: 2px solid red;
+    padding: 10px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.link-share {
+    width: 75px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+}
+
+a {
+    width: 75px;
+    height: 20px;
+    font-size: 16px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 1%;
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: black;
+    font-size: 16px;
+}
+
+a:hover {
+    color: blue;
+    font-size: 16px;
+}
+
+/*-----Media Breakpoint-----*/
+@media (max-width: 1000px) {
+    article {
+        width: 100%;
+    }
+}
